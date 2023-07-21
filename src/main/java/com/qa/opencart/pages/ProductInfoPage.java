@@ -52,9 +52,9 @@ public class ProductInfoPage {
 		String successMesg = eleUtil.waitForElementVisible(cartSuccessMesg, AppConstants.DEFAULT_SHORT_TIMEOUT)
 				.getText();
 
-		StringBuilder sb =new StringBuilder(successMesg);
-		String message=sb.substring(0, successMesg.length()-1).replace("\n","").toString();
-		System.out.println("Cart Message is :"+message);
+		StringBuilder sb = new StringBuilder(successMesg);
+		String message = sb.substring(0, successMesg.length() - 1).replace("\n", "").toString();
+		System.out.println("Cart Message is :" + message);
 		return message;
 	}
 
